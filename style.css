@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    inset: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(homeimage.jpg) no-repeat;
+    background-size: 1300px 1050px;
+    background-position: top center;
+}
+
+:root{
+    --darkest: #025464;
+    --dark-orange: #E57C23;
+    --light-orange: #E8AA42;
+    --lightest: #F8F1F1;
+}
+
+header{
+    position: absolute;
+    padding: 30px 50px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+header nav ul{
+    display: flex;
+    background-color: transparent;
+    transform: translateY(5px);
+}
+
+header nav ul li{
+    margin-left: 80px;
+    list-style: none;
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--lightest);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.logo{
+    font-size: 35px;
+    font-weight: 700;
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.V{
+    color: var(--dark-orange);
+    font-size: 40px;
+}
+
+.E{
+    color: var(--dark-orange);
+    font-size: 40px;
+}
+
+.login{
+    padding: 5px 20px;
+    font-size: 18px;
+    transform: translateY(-5px);
+    cursor: pointer;
+    border: var(--dark-orange) 1px solid;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--lightest);
+    justify-content: center;
+    align-items: center;
+    transition: background-color 500ms,
+                border 500ms;
+}
+
+.login:hover{
+    background-color: var(--dark-orange);
+    border: 1px var(--dark-orange)  solid;
+}
+
+.login:active{
+    background-color: var(--light-orange);
+    border: var(--light-orange) solid 1px;
+}
