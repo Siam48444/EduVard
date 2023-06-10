@@ -15,7 +15,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url(homeimage.jpg) no-repeat;
+    background: url(homeimg.jpg) no-repeat;
     background-size: 1300px 1050px;
     background-position: top center;
     background-size: cover;
