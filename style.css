@@ -18,6 +18,7 @@ body{
     background: url(homeimage.jpg) no-repeat;
     background-size: 1300px 1050px;
     background-position: top center;
+    background-size: cover;
 }
 
 :root{
@@ -131,23 +132,27 @@ header nav ul a:hover::after{
     transform: translateY(-5px);
     cursor: pointer;
     border: var(--dark-orange) 1px solid;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: transparent;
     color: var(--lightest);
     justify-content: center;
     align-items: center;
     transition: background-color 500ms,
-                border 500ms;
+                border 500ms,
+                box-shadow 500ms;
 }
 
 .login:hover{
     background-color: var(--dark-orange);
     border: 1px var(--dark-orange)  solid;
+    box-shadow: 0px 0px 10px var(--dark-orange);
 }
 
 .login:active{
     background-color: var(--light-orange);
     border: var(--light-orange) solid 1px;
+    transition: none;
+    box-shadow: 0px 0px 10px var(--light-orange);
 }
 
 .hero{
@@ -159,14 +164,57 @@ header nav ul a:hover::after{
     flex-direction: column;
 }
 
+@keyframes hero{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 h1{
     color: var(--lightest);
     font-size: 60px;
     font-weight: 700;
+    z-index: 1;
+    animation: hero ease-out 1500ms forwards;
 }
 
 p{
     color: var(--lightest);
     font-weight: 500;
-    font-size: 18px;
+    z-index: 1;
+    font-size: 22px;
+    animation: hero ease-out 1500ms forwards;
+}
+
+.herobutton{
+    padding: 5px 20px;
+    font-size: 22px;
+    margin-top: 50px;
+    cursor: pointer;
+    border: var(--dark-orange) 1px solid;
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--lightest);
+    justify-content: center;
+    z-index: 1;
+    align-items: center;
+    transition: background-color 500ms,
+                border 500ms,
+                box-shadow 500ms;
+}
+
+.herobutton:hover{
+    background-color: var(--dark-orange);
+    border: 1px var(--dark-orange)  solid;
+    box-shadow: 0px 0px 10px var(--dark-orange);
+}
+
+.herobutton:active{
+    background-color: var(--light-orange);
+    border: var(--light-orange) solid 1px;
+    transition: none;
+    box-shadow: 0px 0px 10px var(--light-orange);
 }
