@@ -11,6 +11,13 @@
     scroll-behavior: smooth;
 }
 
+:root{
+    --darkest: #025464;
+    --dark-orange: #E57C23;
+    --light-orange: #E8AA42;
+    --lightest: #F8F1F1;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -19,13 +26,7 @@ body{
     background-size: 1300px 1050px;
     background-position: top center;
     background-size: cover;
-}
-
-:root{
-    --darkest: #025464;
-    --dark-orange: #E57C23;
-    --light-orange: #E8AA42;
-    --lightest: #F8F1F1;
+    background-color: var(--lightest);
 }
 
 header{
@@ -201,15 +202,18 @@ p{
     justify-content: center;
     z-index: 1;
     align-items: center;
+    animation: hero ease-out 1500ms forwards;
     transition: background-color 500ms,
                 border 500ms,
-                box-shadow 500ms;
+                box-shadow 500ms,
+                transform 500ms;
 }
 
 .herobutton:hover{
     background-color: var(--dark-orange);
     border: 1px var(--dark-orange)  solid;
     box-shadow: 0px 0px 10px var(--dark-orange);
+    transform: translateY(-3px);
 }
 
 .herobutton:active{
