@@ -1,21 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
  
 *{
     margin: 0;
     padding: 0;
     inset: 0;
     box-sizing: border-box;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
 :root{
-    --darkest: #024755;
+    --darkest: #18122B;
     --dark-orange: #E57C23;
     --light-orange: #E8AA42;
-    --lightest: #F8F1F1;
+    --lightest: #F4EEE0;
+    --red: #F15A59;
+    --box-shadow: #c9c9b3;
 }
 
 body{
@@ -58,14 +61,14 @@ header nav ul{
 }
 
 header nav ul li{
-    margin-left: 80px;
+    margin-left: 70px;
     list-style: none;
 }
 
 header nav a{
     text-decoration: none;
     color: var(--lightest);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -96,8 +99,8 @@ header nav ul a:hover::after{
 }
 
 .logo{
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 500;
     cursor: pointer;
     transform: translateY(-2px);
     transition: color 500ms;
@@ -115,21 +118,17 @@ header nav ul a:hover::after{
     color: var(--lightest);
 }
 
-.V{
+.V, .E{
     color: var(--dark-orange);
-    font-size: 40px;
-    transition: color 500ms;
-}
-
-.E{
-    color: var(--dark-orange);
-    font-size: 40px;
+    font-size: 35px;
+    font-weight: 800;
     transition: color 500ms;
 }
 
 .login{
     padding: 5px 20px;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
     transform: translateY(-5px);
     cursor: pointer;
     border: var(--dark-orange) 1px solid;
@@ -176,28 +175,31 @@ header nav ul a:hover::after{
 
 h1{
     color: var(--lightest);
-    font-size: 60px;
-    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    text-align: center;
+    font-weight: 800;
     z-index: 1;
     animation: hero ease-out 1500ms forwards;
+    margin-bottom: 10px;
 }
 
 p{
     color: var(--lightest);
     font-weight: 500;
     z-index: 1;
-    font-size: 22px;
+    font-size: 20px;
     animation: hero ease-out 1500ms forwards;
 }
 
 .herobutton{
     padding: 5px 20px;
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 50px;
     cursor: pointer;
     border: var(--dark-orange) 1px solid;
     border-radius: 10px;
-    background-color: transparent;
+    background-color: var(--dark-orange);
     color: var(--lightest);
     justify-content: center;
     z-index: 1;
@@ -206,7 +208,7 @@ p{
     transition: background-color 500ms,
                 border 500ms,
                 box-shadow 500ms,
-                transform 500ms;
+                transform 300ms;
 }
 
 .herobutton:hover{
@@ -223,22 +225,11 @@ p{
     box-shadow: 0px 0px 10px var(--light-orange);
 }
 
-.offers{
-    z-index: 1;
-    background-color: transparent;
-    margin-top: 1300px;
-    position: absolute;
-    display: flex;
-    cursor: pointer;
-    justify-content: center;
-    gap: 100px;
-    width: 100%;
-}
-
 .section1{
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
 }
 
 .section1 h1{
@@ -247,19 +238,30 @@ p{
     color: var(--darkest);
     vertical-align: middle;
     background-color: transparent;
-    margin-top: 250px;
-    font-weight: 700;
-    font-size: 60px;
+    margin-top: 230px;
+    font-weight: 800;
+    font-size: 50px;
 }
 
+
 .offers{
+    z-index: 1;
+    background-color: transparent;
+    margin-top: 1300px;
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
     gap: 60px;
+    width: 100%px;
 }
 
 .offer1 p,
 .offer2 p,
 .offer3 p{
-    background-color: var(--darkest);
-    padding: 150px 150px;
+    background-color: var(--lightest);
+    height: 350px;
+    width: 350px;
     border-radius: 15px;
+    box-shadow: 5px 5px 15px var(--box-shadow);
 }
