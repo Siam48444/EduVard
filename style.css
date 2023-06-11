@@ -14,8 +14,8 @@
 
 :root{
     --darkest: #18122B;
-    --dark-orange: #E57C23;
-    --light-orange: #E8AA42;
+    --dark-orange: #F79327;
+    --light-orange: #FFE569;
     --lightest: #F4EEE0;
     --red: #F15A59;
     --box-shadow: #c9c9b3;
@@ -152,6 +152,7 @@ header nav ul a:hover::after{
     background-color: var(--light-orange);
     border: var(--light-orange) solid 1px;
     transition: none;
+    color: var(--darkest);
     box-shadow: 0px 0px 10px var(--light-orange);
 }
 
@@ -222,6 +223,7 @@ p{
     background-color: var(--light-orange);
     border: var(--light-orange) solid 1px;
     transition: none;
+    color: var(--darkest);
     box-shadow: 0px 0px 10px var(--light-orange);
 }
 
@@ -256,12 +258,43 @@ p{
     width: 100%px;
 }
 
-.offer1 p,
-.offer2 p,
-.offer3 p{
+.offer1,
+.offer2,
+.offer3{
     background-color: var(--lightest);
+    text-align: center;
     height: 350px;
     width: 350px;
     border-radius: 15px;
+    color: var(--darkest);
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
     box-shadow: 5px 5px 15px var(--box-shadow);
+}
+
+.offer1:hover,
+.offer2:hover,
+.offer3:hover{
+    
+}
+
+.offer1 p,
+.offer2 p,
+.offer3 p{
+    color: var(--darkest);
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 20px 20px 20px;
+}
+
+.offer1 .offerdescription1,
+.offer2 .offerdescription2,
+.offer3 .offerdescription3{
+    font-weight: 300;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--darkest);
+    position: relative;
 }
