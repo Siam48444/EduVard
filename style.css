@@ -382,3 +382,23 @@ footer{
     text-align: center;
     top: 265px;
 }
+
+svg{
+    cursor: default;
+    z-index: 1;
+    fill: var(--lightest);
+    top: 265px;
+}
+
+.svgs{
+    display: flex;
+    margin: 60px 60px;
+    margin-top: 235px;
+    gap: 20px;
+}
+
+.facebook,
+.instagram,
+.twitter{
+    
+}
