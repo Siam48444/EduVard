@@ -86,7 +86,7 @@ header nav ul a::after{
     width: 100%;
     bottom: 0;
     left: 0;
-    border-radius: 100%;
+    border-radius: 5px;
     transform: scale(0);
     transform-origin: right;
     transition: transform 500ms;
@@ -249,7 +249,6 @@ p{
     margin-top: 1300px;
     position: absolute;
     display: flex;
-    cursor: pointer;
     justify-content: center;
     gap: 60px;
     width: 100%px;
@@ -268,6 +267,24 @@ p{
     font-size: 20px;
     font-weight: 500;
     box-shadow: 5px 5px 15px var(--box-shadow);
+}
+
+.offer1 button,
+.offer2 button,
+.offer3 button{
+    position: absolute;
+    background-color: var(--dark-orange);
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    border: solid var(--dark-orange) 1px;
+    color: var(--darkest);
+    font-size: 16px;
+    font-weight: 300;
+    left: 120px;
+    top: 250px;
+    z-index: 1;
+    cursor: pointer;
 }
 
 .offer1:hover,
