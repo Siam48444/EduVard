@@ -10,6 +10,7 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
     scroll-behavior: smooth;
+    cursor: default;
 }
 
 :root{
@@ -232,12 +233,12 @@ p{
 }
 
 .section1 h1{
-
+    position: relative;
     align-content: center;
     color: var(--darkest);
     vertical-align: middle;
     background-color: transparent;
-    margin-top: 230px;
+    margin-top: 250px;
     font-weight: 800;
     font-size: 50px;
 }
@@ -266,7 +267,20 @@ p{
     position: relative;
     font-size: 20px;
     font-weight: 500;
-    box-shadow: 5px 5px 15px var(--box-shadow);
+    box-shadow: 7px 7px 20px var(--box-shadow);
+    transition: box-shadow 500ms;
+}
+
+.offer1:hover,
+.offer2:hover,
+.offer3:hover{
+    box-shadow: 7px 7px 20px var(--light-orange);
+}
+
+.offer1:hover p,
+.offer2:hover p,
+.offer3:hover p{
+    color: #c9c9b3;
 }
 
 .offer1 button,
@@ -318,6 +332,7 @@ p{
     font-size: 20px;
     font-weight: 500;
     margin: 20px 20px 20px 20px;
+    transition: color 500ms;
 }
 
 .offer1 .offerdescription1,
@@ -328,5 +343,42 @@ p{
     text-align: justify;
     color: var(--darkest);
     position: relative;
-    margin: 20px 30px 20px 30px;
+    margin: 20px 30px 30px 30px;
+}
+
+footer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    animation: footer 1000ms ease-out forwards;
+}
+
+@keyframes footer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.footer1{
+    background-color: var(--darkest);
+    position: absolute;
+    z-index: 1;
+    height: 300px;
+    width: 100%;
+    transform: translateY(500px);
+}
+
+.footer1 p{
+    font-size: 12px;
+    position: relative;
+    font-weight: 300;
+    text-align: center;
+    top: 265px;
 }
