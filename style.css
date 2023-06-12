@@ -278,19 +278,36 @@ p{
     height: 35px;
     border-radius: 15px;
     border: solid var(--dark-orange) 1px;
-    color: var(--darkest);
+    color: var(--lightest);
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
     left: 120px;
     top: 250px;
     z-index: 1;
     cursor: pointer;
+    opacity: 0;
+    transition: opacity 700ms,
+                box-shadow 500ms;
 }
 
-.offer1:hover,
-.offer2:hover,
-.offer3:hover{
-    
+.offer1 button:hover,
+.offer2 button:hover,
+.offer3 button:hover{
+    box-shadow: var(--dark-orange) 0px 0px 10px;
+}
+
+.offer1 button:active,
+.offer2 button:active,
+.offer3 button:active{
+    background-color: var(--light-orange);
+    border: 1px var(--light-orange);
+    transition: none;
+}
+
+.offer1:hover button,
+.offer2:hover button,
+.offer3:hover button{
+    opacity: 1;
 }
 
 .offer1 p,
